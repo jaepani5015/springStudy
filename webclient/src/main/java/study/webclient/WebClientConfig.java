@@ -27,6 +27,7 @@ public class WebClientConfig {
 
         return WebClient
                 .builder()
+                .baseUrl("https://jsonplaceholder.typicode.com")
                 .clientConnector(
                         new ReactorClientHttpConnector(
                                 HttpClient
